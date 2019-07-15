@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Board</title>
+        <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <a-scene>
+            <!-- Spacing. -->
+            <a-entity mixin="marker" position="-1 2.5 0.01"></a-entity>
+            <a-entity
+                position="0.1 2.25 -2.875"
+                text="width: 3; wrapCount: 25; color: black; value: Hello World ! This is best Sign Board MR app. And this is the sign board example. "
+            >
+            </a-entity>
+            <a-box
+                position="0 2.25 -3"
+                rotation="0 0 0"
+                width="3"
+                height="1.5"
+                depth="0.25"
+                color="#4CC3D9"
+            ></a-box>
+            <a-cylinder
+                position="0 0.75 -3"
+                radius="0.1"
+                height="1.50"
+                color="#FFC65D"
+            ></a-cylinder>
+            <a-plane
+                position="0 0 -4"
+                rotation="-90 0 0"
+                width="4"
+                height="4"
+                color="#7BC8A4"
+            ></a-plane>
+            <a-sky color="#ECECEC"></a-sky>
+        </a-scene>
+
+        <script src="src/index.js"></script>
+    </body>
+</html>
